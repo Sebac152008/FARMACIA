@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #F1F1F6;
+    padding: 20px;
+}
+/*CABECERA*/
+header{
+    max-width: 1000px;
+    min-height: 130px;
+    margin: 0 auto;
+    border-radius: 20px 20px 0 0;
+    background: #ffffff;
+}
+#logo {
+    width: 320px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    animation: 1s entradalogo 1;
+}
+#logo img {
+    width: 200px;
+    height: 100px;
+}
+/*CABECERA*/
+
+
+/*MENU HORIZONTAL*/
+#nav-h{
+    max-width: 1000px;
+    min-height: 50px;
+    background: #1D1753;
+    margin: 0 auto;
+}
+
+#nav-h ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#nav-h a {
+    color: white;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    background: #1D1753;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+#nav-h ul ul {
+    display: none;
+    position: absolute;
+}
+
+#nav-h ul li:hover ul {
+    display: block;
+}
+
+#nav-h a:hover {
+    background: red;
+}
+/*MENU HORIZONTAL*/
+
+
+
+/*BANNER*/
+#ban {
+    background: white;
+    max-width: 1000px;
+    min-height: 350px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#banner{
+    max-width: 1000px;
+    min-height: 350px;
+    margin: 0 auto;
+    animation: slider 35s infinite alternate ease-in-out;
+    margin-top: -50px;
+}
+
+#banner img {
+    width: 1000px;
+    height: 350px;
+    margin: 50px auto 0;
+}
+#banner ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+}
+#banner li {
+    list-style: none;
+}
+/*BANNER*/
+
+
+/*CONTENIDO*/
+#contenido{
+    width: 1000px;
+    min-height: 700px;
+    background: white;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+#contenido h2 {
+    color: #271F6E;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 35px;
+    font-weight: bold;
+    font-size: 38px;
+}
+#contenido p {
+    color: #271F6E;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#contenido img {
+    width: 450px;
+    height: 300px;
+    margin-top: 40px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+
+/*CONTENIDO*/
+
+/*PIE DE PAGINA*/
+footer{
+    max-width: 1000px;
+    background: #271F6E;
+    margin: 0 auto;
+    border-radius: 0 0 20px 20px;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+
+/*PIE DE PAGINA*/
+
+
+/*KEYFRAMES*/
+
+@keyframes entradalogo {
+    0% {
+        transform: translateX(200px);
+    }
+}
+
+@keyframes rotacion {
+    0% {
+        transform: rotate(270deg);
+    }
+}
+
+/*Slider*/
+@keyframes slider {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+}
+/*Slider*/
+
+
+/*KEYFRAMES*/
